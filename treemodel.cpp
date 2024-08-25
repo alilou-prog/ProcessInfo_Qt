@@ -21,21 +21,21 @@ QModelIndex TreeModel::index(int row, int column, const QModelIndex &parent) con
     if (!hasIndex(row, column, parent))
         return {};
 
-    // if parent is
+    // get a pointer to the parent
     TreeItem *parentItem = parent.isValid()
                                ? static_cast<TreeItem*>(parent.internalPointer())
                                : rootItem.get();
-
+    // get a pointer to the child. If it exists, call createIndex() with : row, column and childItem
     if (auto *childItem = parentItem->child(row))
         return createIndex(row, column, childItem);
-    return {};
+    return {}; // satisfy the compiler
 }
 
 QModelIndex TreeModel::parent(const QModelIndex &index) const
 {
     if (!index.isValid())
         return {};
-
+    // get internal pointer of this Item, then get parent pointer using parentItem()
     auto *childItem = static_cast<TreeItem*>(index.internalPointer());
     TreeItem *parentItem = childItem->parentItem();
 
@@ -51,7 +51,7 @@ int TreeModel::rowCount(const QModelIndex &parent) const
     const TreeItem *parentItem = parent.isValid()
                                      ? static_cast<const TreeItem*>(parent.internalPointer())
                                      : rootItem.get();
-
+    // row count is child count
     return parentItem->childCount();
 }
 
@@ -75,4 +75,14 @@ Qt::ItemFlags TreeModel::flags(const QModelIndex &index) const
 {
     return index.isValid()
     ? QAbstractItemModel::flags(index) : Qt::ItemFlags(Qt::NoItemFlags);
+}
+
+
+// ############################
+// ## SETTING UP THE MODEL DATA
+// ############################
+
+void TreeModel::setupModelData(const QList<QStringView> &lines, TreeItem *parent)
+{
+
 }
