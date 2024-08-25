@@ -1,9 +1,9 @@
-/home/ali/qt_projects/ProcessInfo_Qt/build/Desktop_Qt_6_7_2-Debug/CMakeFiles/ProcessInfo_Qt.dir
+/home/ali/qt_projects/ProcessInfo_Qt/build/Desktop_Qt_6_7_2-Debug/CMakeFiles/ProcessInfo.dir
 /home/ali/qt_projects/ProcessInfo_Qt/build/Desktop_Qt_6_7_2-Debug/CMakeFiles/edit_cache.dir
 /home/ali/qt_projects/ProcessInfo_Qt/build/Desktop_Qt_6_7_2-Debug/CMakeFiles/rebuild_cache.dir
 /home/ali/qt_projects/ProcessInfo_Qt/build/Desktop_Qt_6_7_2-Debug/CMakeFiles/list_install_components.dir
 /home/ali/qt_projects/ProcessInfo_Qt/build/Desktop_Qt_6_7_2-Debug/CMakeFiles/install.dir
 /home/ali/qt_projects/ProcessInfo_Qt/build/Desktop_Qt_6_7_2-Debug/CMakeFiles/install/local.dir
 /home/ali/qt_projects/ProcessInfo_Qt/build/Desktop_Qt_6_7_2-Debug/CMakeFiles/install/strip.dir
-/home/ali/qt_projects/ProcessInfo_Qt/build/Desktop_Qt_6_7_2-Debug/CMakeFiles/ProcessInfo_Qt_autogen_timestamp_deps.dir
-/home/ali/qt_projects/ProcessInfo_Qt/build/Desktop_Qt_6_7_2-Debug/CMakeFiles/ProcessInfo_Qt_autogen.dir
+/home/ali/qt_projects/ProcessInfo_Qt/build/Desktop_Qt_6_7_2-Debug/CMakeFiles/ProcessInfo_autogen_timestamp_deps.dir
+/home/ali/qt_projects/ProcessInfo_Qt/build/Desktop_Qt_6_7_2-Debug/CMakeFiles/ProcessInfo_autogen.dir

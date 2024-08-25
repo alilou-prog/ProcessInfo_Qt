@@ -1,0 +1,11 @@
+# ninja log v5
+5	648	1724573265379331398	ProcessInfo_autogen/timestamp	96ec12f7b8609cf6
+5	648	1724573265379331398	ProcessInfo_autogen/mocs_compilation.cpp	96ec12f7b8609cf6
+5	648	1724573265379331398	/home/ali/qt_projects/ProcessInfo_Qt/build/Desktop_Qt_6_7_2-Debug/ProcessInfo_autogen/timestamp	96ec12f7b8609cf6
+5	648	1724573265379331398	/home/ali/qt_projects/ProcessInfo_Qt/build/Desktop_Qt_6_7_2-Debug/ProcessInfo_autogen/mocs_compilation.cpp	96ec12f7b8609cf6
+651	1957	1724573266693347371	CMakeFiles/ProcessInfo.dir/ProcessInfo/SystemAnalyser.cpp.o	3fb5813d713e6344
+650	4260	1724573268997375381	CMakeFiles/ProcessInfo.dir/ProcessInfo_autogen/mocs_compilation.cpp.o	bf849e29b9d1dce6
+650	4585	1724573269322379332	CMakeFiles/ProcessInfo.dir/main.cpp.o	72e40a8a53c56e3c
+650	4712	1724573269449380876	CMakeFiles/ProcessInfo.dir/mainwindow.cpp.o	37230c62f64e5b2d
+651	5149	1724573269880386117	CMakeFiles/ProcessInfo.dir/ProcessInfo/ProcessInfo.cpp.o	b06ce40e890ac99d
+5149	5744	1724573270475393351	ProcessInfo	962d734c33f828ed

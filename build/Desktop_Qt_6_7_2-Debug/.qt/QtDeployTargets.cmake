@@ -1,2 +1,2 @@
-set(__QT_DEPLOY_TARGET_ProcessInfo_Qt_FILE /home/ali/qt_projects/ProcessInfo_Qt/build/Desktop_Qt_6_7_2-Debug/ProcessInfo_Qt)
-set(__QT_DEPLOY_TARGET_ProcessInfo_Qt_TYPE EXECUTABLE)
+set(__QT_DEPLOY_TARGET_ProcessInfo_FILE /home/ali/qt_projects/ProcessInfo_Qt/build/Desktop_Qt_6_7_2-Debug/ProcessInfo)
+set(__QT_DEPLOY_TARGET_ProcessInfo_TYPE EXECUTABLE)
