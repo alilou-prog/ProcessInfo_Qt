@@ -380,6 +380,18 @@
 			"MU",
 			"EWIEGA46WW/moc_mainwindow.cpp",
 			null
+		],
+		[
+			"/home/ali/qt_projects/ProcessInfo_Qt/treeitem.h",
+			"MU",
+			"EWIEGA46WW/moc_treeitem.cpp",
+			null
+		],
+		[
+			"/home/ali/qt_projects/ProcessInfo_Qt/treemodel.h",
+			"MU",
+			"EWIEGA46WW/moc_treemodel.cpp",
+			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
@@ -452,7 +464,9 @@
 			null
 		],
 		[ "/home/ali/qt_projects/ProcessInfo_Qt/main.cpp", "MU", null ],
-		[ "/home/ali/qt_projects/ProcessInfo_Qt/mainwindow.cpp", "MU", null ]
+		[ "/home/ali/qt_projects/ProcessInfo_Qt/mainwindow.cpp", "MU", null ],
+		[ "/home/ali/qt_projects/ProcessInfo_Qt/treeitem.cpp", "MU", null ],
+		[ "/home/ali/qt_projects/ProcessInfo_Qt/treemodel.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],

@@ -7,7 +7,7 @@
 				{
 					"build" : ".",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-.-Debug-77f9fe9c4f5b1a93b637.json",
+					"jsonFile" : "directory-.-Debug-8dd33d3decda9c8fa612.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.16"
@@ -30,7 +30,7 @@
 					[
 						0
 					],
-					"name" : "ProcessInfo_Qt",
+					"name" : "ProcessInfo",
 					"targetIndexes" : 
 					[
 						0,
@@ -43,23 +43,23 @@
 			[
 				{
 					"directoryIndex" : 0,
-					"id" : "ProcessInfo_Qt::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-ProcessInfo_Qt-Debug-3d6405cd05e785a8402f.json",
-					"name" : "ProcessInfo_Qt",
+					"id" : "ProcessInfo::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ProcessInfo-Debug-7452d74d2f0ab6082b93.json",
+					"name" : "ProcessInfo",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
-					"id" : "ProcessInfo_Qt_autogen::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-ProcessInfo_Qt_autogen-Debug-6909494209b266fad34b.json",
-					"name" : "ProcessInfo_Qt_autogen",
+					"id" : "ProcessInfo_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ProcessInfo_autogen-Debug-e84482c0ec049550c482.json",
+					"name" : "ProcessInfo_autogen",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
-					"id" : "ProcessInfo_Qt_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-ProcessInfo_Qt_autogen_timestamp_deps-Debug-b6d03123a1d80a7c6bea.json",
-					"name" : "ProcessInfo_Qt_autogen_timestamp_deps",
+					"id" : "ProcessInfo_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ProcessInfo_autogen_timestamp_deps-Debug-b0016e719a4996ad3864.json",
+					"name" : "ProcessInfo_autogen_timestamp_deps",
 					"projectIndex" : 0
 				}
 			]

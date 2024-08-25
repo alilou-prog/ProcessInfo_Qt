@@ -17,12 +17,12 @@
 	"dependencies" : 
 	[
 		{
-			"id" : "ProcessInfo_Qt_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
+			"id" : "ProcessInfo_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
 		}
 	],
-	"id" : "ProcessInfo_Qt_autogen::@6890427a1f51a3e7e1df",
+	"id" : "ProcessInfo_autogen::@6890427a1f51a3e7e1df",
 	"isGeneratorProvided" : true,
-	"name" : "ProcessInfo_Qt_autogen",
+	"name" : "ProcessInfo_autogen",
 	"paths" : 
 	{
 		"build" : ".",
@@ -51,19 +51,19 @@
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_2-Debug/CMakeFiles/ProcessInfo_Qt_autogen",
+			"path" : "build/Desktop_Qt_6_7_2-Debug/CMakeFiles/ProcessInfo_autogen",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_2-Debug/CMakeFiles/ProcessInfo_Qt_autogen.rule",
+			"path" : "build/Desktop_Qt_6_7_2-Debug/CMakeFiles/ProcessInfo_autogen.rule",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_2-Debug/ProcessInfo_Qt_autogen/timestamp.rule",
+			"path" : "build/Desktop_Qt_6_7_2-Debug/ProcessInfo_autogen/timestamp.rule",
 			"sourceGroupIndex" : 1
 		}
 	],

@@ -1059,7 +1059,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "ProcessInfo_Qt"
+			"value" : "ProcessInfo"
 		},
 		{
 			"name" : "CMAKE_PROJECT_VERSION",
@@ -2162,6 +2162,30 @@
 			"value" : ""
 		},
 		{
+			"name" : "ProcessInfo_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/home/ali/qt_projects/ProcessInfo_Qt/build/Desktop_Qt_6_7_2-Debug"
+		},
+		{
+			"name" : "ProcessInfo_IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "ON"
+		},
+		{
 			"name" : "ProcessInfo_Qt_BINARY_DIR",
 			"properties" : 
 			[
@@ -2187,6 +2211,18 @@
 		},
 		{
 			"name" : "ProcessInfo_Qt_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/home/ali/qt_projects/ProcessInfo_Qt"
+		},
+		{
+			"name" : "ProcessInfo_SOURCE_DIR",
 			"properties" : 
 			[
 				{

@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "ProcessInfo_Qt"
+			"path" : "ProcessInfo"
 		}
 	],
 	"backtrace" : 4,
@@ -71,13 +71,13 @@
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 62,
+				"line" : 66,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 1,
-				"line" : 45,
+				"line" : 49,
 				"parent" : 0
 			},
 			{
@@ -242,7 +242,7 @@
 			[
 				{
 					"backtrace" : 0,
-					"path" : "/home/ali/qt_projects/ProcessInfo_Qt/build/Desktop_Qt_6_7_2-Debug/ProcessInfo_Qt_autogen/include"
+					"path" : "/home/ali/qt_projects/ProcessInfo_Qt/build/Desktop_Qt_6_7_2-Debug/ProcessInfo_autogen/include"
 				},
 				{
 					"backtrace" : 14,
@@ -284,21 +284,25 @@
 			[
 				0,
 				1,
-				2
+				2,
+				5,
+				7,
+				10,
+				12
 			]
 		}
 	],
 	"dependencies" : 
 	[
 		{
-			"id" : "ProcessInfo_Qt_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
+			"backtrace" : 0,
+			"id" : "ProcessInfo_autogen::@6890427a1f51a3e7e1df"
 		},
 		{
-			"backtrace" : 0,
-			"id" : "ProcessInfo_Qt_autogen::@6890427a1f51a3e7e1df"
+			"id" : "ProcessInfo_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
 		}
 	],
-	"id" : "ProcessInfo_Qt::@6890427a1f51a3e7e1df",
+	"id" : "ProcessInfo::@6890427a1f51a3e7e1df",
 	"install" : 
 	{
 		"destinations" : 
@@ -357,8 +361,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "ProcessInfo_Qt",
-	"nameOnDisk" : "ProcessInfo_Qt",
+	"name" : "ProcessInfo",
+	"nameOnDisk" : "ProcessInfo",
 	"paths" : 
 	{
 		"build" : ".",
@@ -372,7 +376,11 @@
 			[
 				0,
 				1,
-				2
+				2,
+				5,
+				7,
+				10,
+				12
 			]
 		},
 		{
@@ -380,7 +388,11 @@
 			"sourceIndexes" : 
 			[
 				3,
-				5
+				6,
+				8,
+				9,
+				11,
+				13
 			]
 		},
 		{
@@ -388,14 +400,14 @@
 			"sourceIndexes" : 
 			[
 				4,
-				6
+				14
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				7
+				15
 			]
 		}
 	],
@@ -405,7 +417,7 @@
 			"backtrace" : 0,
 			"compileGroupIndex" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_2-Debug/ProcessInfo_Qt_autogen/mocs_compilation.cpp",
+			"path" : "build/Desktop_Qt_6_7_2-Debug/ProcessInfo_autogen/mocs_compilation.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
@@ -431,21 +443,65 @@
 			"sourceGroupIndex" : 2
 		},
 		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "ProcessInfo/ProcessInfo.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "ProcessInfo/ProcessInfo.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "ProcessInfo/SystemAnalyser.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "ProcessInfo/SystemAnalyser.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"path" : "treeitem.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "treeitem.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "treemodel.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "treemodel.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_2-Debug/ProcessInfo_Qt_autogen/include/ui_mainwindow.h",
+			"path" : "build/Desktop_Qt_6_7_2-Debug/ProcessInfo_autogen/include/ui_mainwindow.h",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_2-Debug/ProcessInfo_Qt_autogen/timestamp",
+			"path" : "build/Desktop_Qt_6_7_2-Debug/ProcessInfo_autogen/timestamp",
 			"sourceGroupIndex" : 2
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_2-Debug/ProcessInfo_Qt_autogen/timestamp.rule",
+			"path" : "build/Desktop_Qt_6_7_2-Debug/ProcessInfo_autogen/timestamp.rule",
 			"sourceGroupIndex" : 3
 		}
 	],

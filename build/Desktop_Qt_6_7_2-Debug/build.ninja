@@ -89,6 +89,22 @@ build CMakeFiles/ProcessInfo.dir/ProcessInfo/SystemAnalyser.cpp.o: CXX_COMPILER_
   OBJECT_DIR = CMakeFiles/ProcessInfo.dir
   OBJECT_FILE_DIR = CMakeFiles/ProcessInfo.dir/ProcessInfo
 
+build CMakeFiles/ProcessInfo.dir/treeitem.cpp.o: CXX_COMPILER__ProcessInfo_unscanned_Debug /home/ali/qt_projects/ProcessInfo_Qt/treeitem.cpp || cmake_object_order_depends_target_ProcessInfo
+  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = CMakeFiles/ProcessInfo.dir/treeitem.cpp.o.d
+  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always -fPIC
+  INCLUDES = -I/home/ali/qt_projects/ProcessInfo_Qt/build/Desktop_Qt_6_7_2-Debug/ProcessInfo_autogen/include -isystem /home/ali/Qt/6.7.2/gcc_64/include/QtCore -isystem /home/ali/Qt/6.7.2/gcc_64/include -isystem /home/ali/Qt/6.7.2/gcc_64/mkspecs/linux-g++ -isystem /home/ali/Qt/6.7.2/gcc_64/include/QtWidgets -isystem /home/ali/Qt/6.7.2/gcc_64/include/QtGui
+  OBJECT_DIR = CMakeFiles/ProcessInfo.dir
+  OBJECT_FILE_DIR = CMakeFiles/ProcessInfo.dir
+
+build CMakeFiles/ProcessInfo.dir/treemodel.cpp.o: CXX_COMPILER__ProcessInfo_unscanned_Debug /home/ali/qt_projects/ProcessInfo_Qt/treemodel.cpp || cmake_object_order_depends_target_ProcessInfo
+  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = CMakeFiles/ProcessInfo.dir/treemodel.cpp.o.d
+  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always -fPIC
+  INCLUDES = -I/home/ali/qt_projects/ProcessInfo_Qt/build/Desktop_Qt_6_7_2-Debug/ProcessInfo_autogen/include -isystem /home/ali/Qt/6.7.2/gcc_64/include/QtCore -isystem /home/ali/Qt/6.7.2/gcc_64/include -isystem /home/ali/Qt/6.7.2/gcc_64/mkspecs/linux-g++ -isystem /home/ali/Qt/6.7.2/gcc_64/include/QtWidgets -isystem /home/ali/Qt/6.7.2/gcc_64/include/QtGui
+  OBJECT_DIR = CMakeFiles/ProcessInfo.dir
+  OBJECT_FILE_DIR = CMakeFiles/ProcessInfo.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target ProcessInfo
@@ -97,7 +113,7 @@ build CMakeFiles/ProcessInfo.dir/ProcessInfo/SystemAnalyser.cpp.o: CXX_COMPILER_
 #############################################
 # Link the executable ProcessInfo
 
-build ProcessInfo: CXX_EXECUTABLE_LINKER__ProcessInfo_Debug CMakeFiles/ProcessInfo.dir/ProcessInfo_autogen/mocs_compilation.cpp.o CMakeFiles/ProcessInfo.dir/main.cpp.o CMakeFiles/ProcessInfo.dir/mainwindow.cpp.o CMakeFiles/ProcessInfo.dir/ProcessInfo/ProcessInfo.cpp.o CMakeFiles/ProcessInfo.dir/ProcessInfo/SystemAnalyser.cpp.o | /home/ali/Qt/6.7.2/gcc_64/lib/libQt6Widgets.so.6.7.2 /home/ali/Qt/6.7.2/gcc_64/lib/libQt6Gui.so.6.7.2 /home/ali/Qt/6.7.2/gcc_64/lib/libQt6Core.so.6.7.2 /usr/lib/x86_64-linux-gnu/libGLX.so /usr/lib/x86_64-linux-gnu/libOpenGL.so || ProcessInfo_autogen ProcessInfo_autogen_timestamp_deps
+build ProcessInfo: CXX_EXECUTABLE_LINKER__ProcessInfo_Debug CMakeFiles/ProcessInfo.dir/ProcessInfo_autogen/mocs_compilation.cpp.o CMakeFiles/ProcessInfo.dir/main.cpp.o CMakeFiles/ProcessInfo.dir/mainwindow.cpp.o CMakeFiles/ProcessInfo.dir/ProcessInfo/ProcessInfo.cpp.o CMakeFiles/ProcessInfo.dir/ProcessInfo/SystemAnalyser.cpp.o CMakeFiles/ProcessInfo.dir/treeitem.cpp.o CMakeFiles/ProcessInfo.dir/treemodel.cpp.o | /home/ali/Qt/6.7.2/gcc_64/lib/libQt6Widgets.so.6.7.2 /home/ali/Qt/6.7.2/gcc_64/lib/libQt6Gui.so.6.7.2 /home/ali/Qt/6.7.2/gcc_64/lib/libQt6Core.so.6.7.2 /usr/lib/x86_64-linux-gnu/libGLX.so /usr/lib/x86_64-linux-gnu/libOpenGL.so || ProcessInfo_autogen ProcessInfo_autogen_timestamp_deps
   FLAGS = -DQT_QML_DEBUG -g
   LINK_LIBRARIES = -Wl,-rpath,/home/ali/Qt/6.7.2/gcc_64/lib:  /home/ali/Qt/6.7.2/gcc_64/lib/libQt6Widgets.so.6.7.2  /home/ali/Qt/6.7.2/gcc_64/lib/libQt6Gui.so.6.7.2  /home/ali/Qt/6.7.2/gcc_64/lib/libQt6Core.so.6.7.2  /usr/lib/x86_64-linux-gnu/libGLX.so  /usr/lib/x86_64-linux-gnu/libOpenGL.so
   OBJECT_DIR = CMakeFiles/ProcessInfo.dir
