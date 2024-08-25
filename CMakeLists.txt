@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.16)
 
-project(ProcessInfo_Qt VERSION 0.1 LANGUAGES CXX)
+project(ProcessInfo VERSION 0.1 LANGUAGES CXX)
 
 set(CMAKE_AUTOUIC ON)
 set(CMAKE_AUTOMOC ON)
@@ -20,37 +20,38 @@ set(PROJECT_SOURCES
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
-    qt_add_executable(ProcessInfo_Qt
+    qt_add_executable(ProcessInfo
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
+        ProcessInfo/ProcessInfo.cpp ProcessInfo/ProcessInfo.h ProcessInfo/SystemAnalyser.cpp ProcessInfo/SystemAnalyser.h
     )
 # Define target properties for Android with Qt 6 as:
-#    set_property(TARGET ProcessInfo_Qt APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR
+#    set_property(TARGET ProcessInfo APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR
 #                 ${CMAKE_CURRENT_SOURCE_DIR}/android)
 # For more information, see https://doc.qt.io/qt-6/qt-add-executable.html#target-creation
 else()
     if(ANDROID)
-        add_library(ProcessInfo_Qt SHARED
+        add_library(ProcessInfo SHARED
             ${PROJECT_SOURCES}
         )
 # Define properties for Android with Qt 5 after find_package() calls as:
 #    set(ANDROID_PACKAGE_SOURCE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/android")
     else()
-        add_executable(ProcessInfo_Qt
+        add_executable(ProcessInfo
             ${PROJECT_SOURCES}
         )
     endif()
 endif()
 
-target_link_libraries(ProcessInfo_Qt PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
+target_link_libraries(ProcessInfo PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
 # If you are developing for iOS or macOS you should consider setting an
 # explicit, fixed bundle identifier manually though.
 if(${QT_VERSION} VERSION_LESS 6.1.0)
-  set(BUNDLE_ID_OPTION MACOSX_BUNDLE_GUI_IDENTIFIER com.example.ProcessInfo_Qt)
+  set(BUNDLE_ID_OPTION MACOSX_BUNDLE_GUI_IDENTIFIER com.example.ProcessInfo)
 endif()
-set_target_properties(ProcessInfo_Qt PROPERTIES
+set_target_properties(ProcessInfo PROPERTIES
     ${BUNDLE_ID_OPTION}
     MACOSX_BUNDLE_BUNDLE_VERSION ${PROJECT_VERSION}
     MACOSX_BUNDLE_SHORT_VERSION_STRING ${PROJECT_VERSION_MAJOR}.${PROJECT_VERSION_MINOR}
@@ -59,12 +60,12 @@ set_target_properties(ProcessInfo_Qt PROPERTIES
 )
 
 include(GNUInstallDirs)
-install(TARGETS ProcessInfo_Qt
+install(TARGETS ProcessInfo
     BUNDLE DESTINATION .
     LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
     RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
 )
 
 if(QT_VERSION_MAJOR EQUAL 6)
-    qt_finalize_executable(ProcessInfo_Qt)
+    qt_finalize_executable(ProcessInfo)
 endif()

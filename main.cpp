@@ -1,6 +1,10 @@
 #include "mainwindow.h"
 
 #include <QApplication>
+#include <QDebug>
+
+#include <stdexcept>
+#include "ProcessInfo/ProcessInfo.h"
 
 int main(int argc, char *argv[])
 {
