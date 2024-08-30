@@ -13,7 +13,7 @@ void ProcessInfo::display(const string& arguments)
     {
         const string command = "ps -eo " + arguments; 
         m_systemAnalyser.RunCommand(command.data());
-        m_systemAnalyser.DisplayOutput();
+        cout << m_systemAnalyser.output();
     }
     else
     {

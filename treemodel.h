@@ -4,6 +4,7 @@
 #include <QAbstractItemModel>
 #include <memory>
 #include "treeitem.h"
+#include "tree.h"
 
 class TreeModel : public QAbstractItemModel
 {
@@ -12,7 +13,7 @@ class TreeModel : public QAbstractItemModel
 public:
     Q_DISABLE_COPY_MOVE(TreeModel)
 
-    explicit TreeModel(const QString &data, QObject *parent = nullptr);
+    explicit TreeModel(QObject *parent = nullptr);
     ~TreeModel() override =default;
 
     QVariant data(const QModelIndex &index, int role) const override;
@@ -31,9 +32,9 @@ public:
     int columnCount(const QModelIndex &parent = {}) const override;
 
 private:
-    static void setupModelData(const QList<QStringView> &lines, TreeItem *parent);
+    void setupModelData();
 
-    std::unique_ptr<TreeItem> rootItem;
+    Tree tree;
 };
 
 #endif // TREEMODEL_H

@@ -5,8 +5,12 @@
 #include <QVariant>
 #include <vector>
 
+class Tree;
+
 class TreeItem
 {
+    friend class Tree;
+
 public:
     explicit TreeItem(QVariantList data, TreeItem *parentItem = nullptr);
 
@@ -16,6 +20,7 @@ public:
     int childCount() const;
     int columnCount() const;
     QVariant data(int column) const;
+    QVariantList allData() const;
     int row() const;
     TreeItem *parentItem();
 

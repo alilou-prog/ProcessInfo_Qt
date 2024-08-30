@@ -28,9 +28,9 @@ void SystemAnalyser::StoreOutput(std::string result)
 	outputStore = result;
 }
 
-void SystemAnalyser::DisplayOutput() const
+std::string SystemAnalyser::output() const
 {
-	std::cout << outputStore << std::endl;
+    return outputStore;
 }
 
 SystemAnalyser::~SystemAnalyser()

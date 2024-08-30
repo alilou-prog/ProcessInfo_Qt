@@ -9,7 +9,7 @@ void TreeItem::appendChild(std::unique_ptr<TreeItem> &&child)
     m_childItems.push_back(std::move(child));
 }
 
-TreeItem *TreeItem::child(row)
+TreeItem *TreeItem::child(int row)
 {
     return row >= 0 && row < childCount() ? m_childItems.at(row).get() : nullptr;
 }
@@ -42,6 +42,11 @@ int TreeItem::columnCount() const
 QVariant TreeItem::data(int column) const
 {
     return m_itemData.value(column); // value check weather column is valid or not
+}
+
+QVariantList TreeItem::allData() const
+{
+    return m_itemData;
 }
 
 TreeItem *TreeItem::parentItem()

@@ -1,6 +1,7 @@
 #include "mainwindow.h"
 #include "./ui_mainwindow.h"
 
+
 #include <iostream>
 
 MainWindow::MainWindow(QWidget *parent)
@@ -44,7 +45,7 @@ void MainWindow::constructArguments()
 
 
 void MainWindow::display()
-{
+{   
     // first construct the argument string
     constructArguments();
     try{
