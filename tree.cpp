@@ -1,7 +1,9 @@
-#include "tree.h"
-
 #include <vector>
 #include <stdexcept>
+
+#include "tree.h"
+#include "treeitem.h"
+
 using namespace std;
 
 Tree::Tree() :root{nullptr} {}

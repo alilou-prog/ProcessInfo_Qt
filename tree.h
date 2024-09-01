@@ -1,9 +1,12 @@
 #ifndef TREE_H
 #define TREE_H
 
-#include "treeitem.h"
+// #include "treeitem.h"
+#include <QVariant>
 
 class TreeModel;
+class TreeItem;
+
 
 class Tree
 {
