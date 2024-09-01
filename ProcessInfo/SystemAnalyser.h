@@ -1,6 +1,9 @@
 #ifndef __SYSTEM_ANALYSER_H__
 #define __SYSTEM_ANALYSER_H__
 #include <string>
+
+class QProcess;
+
 class SystemAnalyser 
 {
 	public: 
@@ -11,5 +14,6 @@ class SystemAnalyser
 	private:
 		std::string outputStore;
 		void StoreOutput(std::string result);
+        QProcess *ps;
 };
 #endif

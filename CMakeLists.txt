@@ -34,6 +34,12 @@ add_executable(
         treemodel.cpp treemodel.h
 )
 
+# link dependencies for SystemAnalyser
+target_link_libraries(
+    SystemAnalyser
+    PRIVATE Qt6::Core
+)
+
 # link dependencies for Tree
 target_link_libraries(
         Tree

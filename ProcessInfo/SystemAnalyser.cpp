@@ -1,26 +1,44 @@
 #include <iostream>
-#include <array>
+// #include <array>
+#include <string>
 #include <memory>
 #include "SystemAnalyser.h"
+#include <QProcess>
+#include <QDebug>
 
+QString getState(QProcess::ProcessState state)
+{
+    switch(state)
+    {
+    case QProcess::ProcessState::NotRunning :
+        return "Not Running";
+
+    case QProcess::ProcessState::Starting :
+        return "Starting";
+
+    case QProcess::ProcessState::Running :
+        return "Running";
+
+    default:
+        return "";
+    }
+}
 SystemAnalyser::SystemAnalyser()
 {
 }
 
 void SystemAnalyser::RunCommand(const char * command)
 {
-	std::array<char, 128> buffer;
-	std::string result;
-	
-	std::unique_ptr<FILE, decltype(&pclose)> pipe(popen(command, "r"), pclose);
-	if (!pipe) {
-		throw std::runtime_error("popen() failed!");
-	}
-	while (fgets(buffer.data(), buffer.size(), pipe.get()) != nullptr) {
-		result += buffer.data();
-	}
+    QProcess process;
+    QString commandStr(command);
 
-	StoreOutput(result);
+    process.startCommand(commandStr);
+    process.waitForFinished();
+
+    QString StdOut = process.readAllStandardOutput();
+    // QString StdErr = process.readAllStandardOutput();
+
+    StoreOutput(StdOut.toStdString());
 }
 
 void SystemAnalyser::StoreOutput(std::string result)
