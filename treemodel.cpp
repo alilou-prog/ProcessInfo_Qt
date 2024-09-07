@@ -16,7 +16,7 @@ TreeModel::TreeModel(QObject *parent)
 QVariant TreeModel::headerData(int section, Qt::Orientation orientation,
                                int role) const
 {
-    return QVariant(QString ("EMPTY"));
+    return QVariant(QString::fromLatin1("EMPTY"));
     // return orientation == Qt::Horizontal && role == Qt::DisplayRole
     //            ? rootItem->data(section) : QString{};
 }
@@ -94,7 +94,7 @@ Qt::ItemFlags TreeModel::flags(const QModelIndex &index) const
 // ################ LOCAL FUNCTIONS
 
 // split a string into a vector according to a given delimiter
-void split(string& str, vector<string> &tokens, const string delimiter =" ")
+void split(string &str, vector<string> &tokens, const string &delimiter = " ")
 {
     size_t pos {0};
     string token;

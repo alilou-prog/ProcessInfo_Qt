@@ -10,7 +10,7 @@ Tree::Tree() :root{nullptr} {}
 
 Tree::~Tree() {}
 
-void Tree::insert(QVariantList newData, QVariantList parentData)
+void Tree::insert(const QVariantList &newData, const QVariantList &parentData)
 {
     // if root is not set, set it first !
     if(root == nullptr)
@@ -21,8 +21,7 @@ void Tree::insert(QVariantList newData, QVariantList parentData)
     }
 
     // insert under root
-    if(parentData == QVariantList {QString("")})
-    {
+    if (parentData == QVariantList{QString::fromLatin1("")}) {
         auto newPtr = getNewItem(newData);
         newPtr->m_parentItem = root;
         root->appendChild(std::unique_ptr <TreeItem>{newPtr});
@@ -41,13 +40,12 @@ void Tree::insert(QVariantList newData, QVariantList parentData)
     throw std::invalid_argument("invalid parentItem Data");
 }
 
-
-TreeItem *Tree::search(QVariantList data)
+TreeItem *Tree::search(const QVariantList &data)
 {
     return searchHelper(data,root);
 }
 
-TreeItem *Tree::searchHelper(QVariantList data, TreeItem *nodePtr)
+TreeItem *Tree::searchHelper(const QVariantList &data, TreeItem *nodePtr)
 {
     if(nodePtr != nullptr)
     {
@@ -72,7 +70,7 @@ TreeItem *Tree::searchHelper(QVariantList data, TreeItem *nodePtr)
     return nullptr;
 }
 
-TreeItem *Tree::getNewItem(QVariantList data) const
+TreeItem *Tree::getNewItem(const QVariantList &data) const
 {
     return new TreeItem (data);
 }

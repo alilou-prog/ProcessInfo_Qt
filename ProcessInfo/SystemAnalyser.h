@@ -4,16 +4,17 @@
 
 class QProcess;
 
-class SystemAnalyser 
+class SystemAnalyser
 {
-	public: 
-		SystemAnalyser();
-		virtual void RunCommand(const char * command);
+    public:
+        SystemAnalyser() = default;
+        virtual void RunCommand(const char * command);
         virtual std::string output() const;
-		virtual ~SystemAnalyser();
-	private:
-		std::string outputStore;
-		void StoreOutput(std::string result);
+        virtual ~SystemAnalyser();
+    private:
+        std::string outputStore;
+        void StoreOutput(std::string result);
         QProcess *ps;
+	Q_DISABLE_COPY(SystemAnalyser)
 };
 #endif

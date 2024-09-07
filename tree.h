@@ -14,16 +14,16 @@ class Tree
 public:
     Tree();
     ~Tree();
-    void insert(QVariantList newData, QVariantList parentData = {});
+    void insert(const QVariantList &newData, const QVariantList &parentData = {});
 
 private:
     TreeItem *root;
 
-    TreeItem *search(QVariantList data);
+    TreeItem *search(const QVariantList &data);
 
-    TreeItem *searchHelper(QVariantList data, TreeItem *);
+    TreeItem *searchHelper(const QVariantList &data, TreeItem *);
 
-    TreeItem *getNewItem(QVariantList) const;
+    TreeItem *getNewItem(const QVariantList &) const;
 };
 
 #endif // TREE_H

@@ -5,8 +5,7 @@
 #include <QTreeView>
 
 #include <QProcess>
-#include <iostream>
-#include "ProcessInfo/SystemAnalyser.h"
+
 
 int main(int argc, char *argv[])
 {

@@ -43,7 +43,7 @@ void SystemAnalyser::RunCommand(const char * command)
 
 void SystemAnalyser::StoreOutput(std::string result)
 {
-	outputStore = result;
+    outputStore = result;
 }
 
 std::string SystemAnalyser::output() const
